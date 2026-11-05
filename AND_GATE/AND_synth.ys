@@ -1,0 +1,9 @@
+read_verilog AND.v
+
+synth -top and_gate
+
+abc
+
+stat
+
+write_verilog gate_netlist.v
