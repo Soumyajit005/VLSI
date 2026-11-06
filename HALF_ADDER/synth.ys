@@ -1,0 +1,11 @@
+read_verilog half_adder.v
+
+hierarchy -top half_adder
+
+synth -top half_adder
+
+opt
+
+stat
+
+write_verilog gate_netlist.v
