@@ -1,0 +1,11 @@
+read_verilog full_adder.v ripple_carry_adder.v
+
+hierarchy -top ripple_carry_adder
+
+synth -top ripple_carry_adder
+
+opt
+
+stat
+
+write_verilog gate_netlist.v
