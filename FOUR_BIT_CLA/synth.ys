@@ -1,0 +1,11 @@
+read_verilog carry_lookahead_adder.v
+
+hierarchy -top carry_lookahead_adder
+
+synth -top carry_lookahead_adder
+
+opt
+
+stat
+
+write_verilog gate_netlist.v
