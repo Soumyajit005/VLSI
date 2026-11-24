@@ -1,0 +1,18 @@
+digraph "and_gate" {
+label="and_gate";
+rankdir="LR";
+remincross=true;
+n4 [ shape=octagon, label="Y", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="B", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="A", color="black", fontcolor="black"];
+c7 [ shape=record, label="{{<p6> A|<p5> B}|$77\n$_AND_|{<p4> Y}}",  ];
+x0 [shape=point, ];
+x1 [shape=point, ];
+x2 [shape=point, ];
+x0:e -> c7:p6:w [color="black", fontcolor="black", label=""];
+x1:e -> c7:p5:w [color="black", fontcolor="black", label=""];
+c7:p4:e -> x2:w [color="black", fontcolor="black", label=""];
+x2:e -> n4:w [color="black", fontcolor="black", label=""];
+n5:e -> x1:w [color="black", fontcolor="black", label=""];
+n6:e -> x0:w [color="black", fontcolor="black", label=""];
+}
